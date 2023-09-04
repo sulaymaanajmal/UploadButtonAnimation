@@ -3,21 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UploadButtonAnimation</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="CSS3 Favicon.svg" type="image/x-icon">
+    <title>Home</title>
+
+    <style>
+        body {
+            font-family: 'Roboto Mono', monospace !important;
+        }
+
+        .octopusBtn {
+            border-style: none;
+            border-radius: 100px;
+            background-color: #000000;
+            padding: 10px 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            transition: 0.15s;
+            font-family: 'Roboto Mono', monospace !important;
+        }
+
+        .octopusBtn:hover {
+            opacity: 0.9;
+            box-shadow: 0px 0px 10px 0px #000000;
+        }
+
+        .octopusBtn:active {
+            opacity: 0.7;
+        }
+
+        .butterflyBtn {
+            border-style: none;
+            border-radius: 100px;
+            background-color: #000000;
+            padding: 10px 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            transition: 0.15s;
+            font-family: 'Roboto Mono', monospace !important;
+        }
+
+        .butterflyBtn:hover {
+            opacity: 0.9;
+            box-shadow: 0px 0px 10px 0px #000000;
+        }
+
+        .butterflyBtn:active {
+            opacity: 0.7;
+        }
+    </style>
 </head>
 <body>
-    
-    <img class="glitchy-image" src="Glitchy Octopus.jpg" alt="A Glitchy-Like image of an octopus">
-    
-    <h1 class="heading">The Octopus</h1>
+    <!-- a button which is labeled Octopus that redirects you to 'Octopus.html' -->
+    <button class="octopusBtn" onclick="window.location.href='Octopus.html'">Octopus</button>
 
-    <p class="description"><span class="lorem">Lorem</span> <span class="ipsum">ipsum</span> <span class="dolor">dolor</span> <span class="sit">sit,</span> <span class="amet">amet</span> <br> <span class="consectetur">consectetur</span> <span class="adipisicing">adipisicing</span> <span class="elit">elit.</span></p>
-
-    <button class="upload">
-        Upload
-    </button>
-
+    <!-- a button which is labeled Octopus that redirects you to 'Butterfly.html' -->
+    <button class="butterflyBtn" onclick="window.location.href='Butterfly.html'">Butterfly</button>
 </body>
 </html>
